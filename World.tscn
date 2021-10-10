@@ -1,0 +1,450 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://particle/Particle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://bubble/Bubble.tscn" type="PackedScene" id=2]
+[ext_resource path="res://particle/sprites/particle_1.png" type="Texture" id=3]
+[ext_resource path="res://fonts/LibreBaskerville-Italic.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://particle/sprites/particle_6.png" type="Texture" id=5]
+[ext_resource path="res://particle/sprites/particle_5.png" type="Texture" id=6]
+[ext_resource path="res://particle/sprites/particle_2.png" type="Texture" id=7]
+[ext_resource path="res://particle/sprites/particle_7.png" type="Texture" id=8]
+[ext_resource path="res://particle/sprites/particle_8.png" type="Texture" id=9]
+[ext_resource path="res://particle/sprites/particle_9.png" type="Texture" id=10]
+[ext_resource path="res://particle/sprites/particle_4.png" type="Texture" id=11]
+[ext_resource path="res://particle/sprites/particle_3.png" type="Texture" id=12]
+
+[sub_resource type="DynamicFont" id=1]
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="World" type="Node2D"]
+
+[node name="Bubbles" type="Node2D" parent="."]
+position = Vector2( 0, 13 )
+
+[node name="Bubble_Sat" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 369, 104 )
+day = "Sat"
+
+[node name="Particle3" parent="Bubbles/Bubble_Sat" instance=ExtResource( 1 )]
+hours = 6.0
+
+[node name="Particle2" parent="Bubbles/Bubble_Sat" instance=ExtResource( 1 )]
+type = "angry"
+
+[node name="Particle4" parent="Bubbles/Bubble_Sat" instance=ExtResource( 1 )]
+type = "fresh"
+
+[node name="Particle5" parent="Bubbles/Bubble_Sat" instance=ExtResource( 1 )]
+hours = 3.0
+type = "focused"
+
+[node name="Bubble_Sun" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 649, 104 )
+day = "Sun"
+
+[node name="Particle3" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+hours = 7.0
+
+[node name="Particle2" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+type = "fresh"
+
+[node name="Particle4" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+hours = 2.0
+type = "unproductive"
+
+[node name="Particle5" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+hours = 2.0
+type = "calm"
+
+[node name="Particle6" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+type = "hype"
+
+[node name="Particle7" parent="Bubbles/Bubble_Sun" instance=ExtResource( 1 )]
+hours = 1.5
+type = "antsy"
+
+[node name="Bubble_Mon" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 229, 284 )
+
+[node name="Particle6" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( 11, 36 )
+hours = 5.0
+type = "tired"
+
+[node name="Particle7" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( -53, 4 )
+hours = 3.0
+type = "calm"
+
+[node name="Particle3" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( 43, 20 )
+hours = 2.5
+
+[node name="Particle2" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( -5, -44 )
+hours = 2.0
+type = "antsy"
+
+[node name="Particle5" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( 43, -28 )
+hours = 2.0
+type = "fresh"
+
+[node name="Particle8" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( -21, -12 )
+type = "focused"
+
+[node name="Particle4" parent="Bubbles/Bubble_Mon" instance=ExtResource( 1 )]
+position = Vector2( -37, 36 )
+hours = 0.5
+type = "angry"
+
+[node name="Bubble_Tue" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 509, 284 )
+day = "Tue"
+
+[node name="Particle7" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+hours = 6.0
+type = "unproductive"
+
+[node name="Particle5" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+hours = 5.0
+type = "calm"
+
+[node name="Particle3" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+hours = 2.0
+type = "tired"
+
+[node name="Particle2" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+type = "antsy"
+
+[node name="Particle4" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+hours = 2.0
+type = "fresh"
+
+[node name="Particle6" parent="Bubbles/Bubble_Tue" instance=ExtResource( 1 )]
+hours = 2.0
+
+[node name="Bubble_Wed" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 789, 284 )
+day = "Wed"
+
+[node name="Particle7" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( -5, 20 )
+hours = 6.0
+type = "focused"
+
+[node name="Particle3" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( 27, 52 )
+hours = 2.0
+type = "tired"
+
+[node name="Particle2" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( 27, -28 )
+type = "fresh"
+
+[node name="Particle4" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( -53, 4 )
+hours = 0.5
+type = "unproductive"
+
+[node name="Particle5" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( -5, -44 )
+hours = 1.5
+type = "calm"
+
+[node name="Particle6" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( 43, 4 )
+hours = 1.5
+
+[node name="Particle8" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( -21, -12 )
+type = "hype"
+
+[node name="Particle9" parent="Bubbles/Bubble_Wed" instance=ExtResource( 1 )]
+position = Vector2( -37, 36 )
+hours = 2.0
+type = "antsy"
+
+[node name="Bubble_Thu" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 369, 464 )
+day = "Thu"
+
+[node name="Particle6" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+hours = 3.5
+type = "focused"
+
+[node name="Particle7" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+hours = 2.0
+type = "unproductive"
+
+[node name="Particle3" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+hours = 0.5
+type = "angry"
+
+[node name="Particle2" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+hours = 0.5
+type = "tired"
+
+[node name="Particle4" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+hours = 3.0
+type = "calm"
+
+[node name="Particle5" parent="Bubbles/Bubble_Thu" instance=ExtResource( 1 )]
+type = "fresh"
+
+[node name="Bubble_Fri" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 649, 464 )
+day = "Fri"
+
+[node name="Particle3" parent="Bubbles/Bubble_Fri" instance=ExtResource( 1 )]
+hours = 5.0
+
+[node name="Particle4" parent="Bubbles/Bubble_Fri" instance=ExtResource( 1 )]
+hours = 4.0
+type = "calm"
+
+[node name="Particle2" parent="Bubbles/Bubble_Fri" instance=ExtResource( 1 )]
+position = Vector2( 0, -1.14441e-05 )
+type = "hype"
+
+[node name="Particle5" parent="Bubbles/Bubble_Fri" instance=ExtResource( 1 )]
+type = "unproductive"
+
+[node name="Particle6" parent="Bubbles/Bubble_Fri" instance=ExtResource( 1 )]
+position = Vector2( 0, -1.14441e-05 )
+type = "fresh"
+
+[node name="Legend" type="Control" parent="."]
+margin_left = 256.0
+margin_top = 656.0
+margin_right = 271.0
+margin_bottom = 673.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Legend"]
+margin_left = -1.12244
+margin_right = 478.878
+margin_bottom = 50.0
+custom_constants/separation = 50
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Legend/VBoxContainer"]
+margin_right = 480.0
+custom_constants/separation = 128
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_1" type="Control" parent="Legend/VBoxContainer/HBoxContainer"]
+margin_left = 48.0
+margin_right = 48.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer/particle_1"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer/particle_1"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "happy"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_2" type="Control" parent="Legend/VBoxContainer/HBoxContainer"]
+margin_left = 176.0
+margin_right = 176.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer/particle_2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer/particle_2"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "excited"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_3" type="Control" parent="Legend/VBoxContainer/HBoxContainer"]
+margin_left = 304.0
+margin_right = 304.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer/particle_3"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer/particle_3"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "unproductive"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_4" type="Control" parent="Legend/VBoxContainer/HBoxContainer"]
+margin_left = 432.0
+margin_right = 432.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer/particle_4"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer/particle_4"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "focused"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Legend/VBoxContainer"]
+margin_top = 50.0
+margin_right = 480.0
+margin_bottom = 50.0
+custom_constants/separation = 120
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_5" type="Control" parent="Legend/VBoxContainer/HBoxContainer2"]
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer2/particle_5"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer2/particle_5"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "calm"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_6" type="Control" parent="Legend/VBoxContainer/HBoxContainer2"]
+margin_left = 120.0
+margin_right = 120.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer2/particle_6"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer2/particle_6"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "fresh"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_7" type="Control" parent="Legend/VBoxContainer/HBoxContainer2"]
+margin_left = 240.0
+margin_right = 240.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer2/particle_7"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer2/particle_7"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "nervous"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_8" type="Control" parent="Legend/VBoxContainer/HBoxContainer2"]
+margin_left = 360.0
+margin_right = 360.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer2/particle_8"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer2/particle_8"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "frustrated"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="particle_9" type="Control" parent="Legend/VBoxContainer/HBoxContainer2"]
+margin_left = 480.0
+margin_right = 480.0
+
+[node name="Sprite" type="Sprite" parent="Legend/VBoxContainer/HBoxContainer2/particle_9"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_editor_description_": "		"
+}
+
+[node name="Label" type="Label" parent="Legend/VBoxContainer/HBoxContainer2/particle_9"]
+margin_right = 44.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "tired"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

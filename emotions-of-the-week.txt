@@ -1,0 +1,54 @@
+Sat
+    1 angry
+    8 happy
+    1 fresh
+    3 focused
+
+Sun
+    8.5 happy
+    1 fresh
+    2 unproductive
+    2 calm
+    1 hype
+    1.5 antsy
+
+Mon
+    2.5 happy
+    2 antsy
+    0.5 angry
+    2 fresh
+    5 tired
+    3 calm
+    1 focused
+
+Tue
+    2 tired
+    1 antsy
+    2 fresh
+    5 calm
+    2 happy
+    6 unproductive
+
+Wed
+    2 tired 
+    1 fresh
+    0.5 unproductive
+    1.5 calm
+    1.5 happy
+    6 focused
+    1 hype
+    2 antsy
+
+Thu
+    0.5 angry
+    0.5 tired
+    3 calm
+    1 fresh
+    3.5 focused
+    2 unproductive
+
+Fri
+    5 happy
+    1 hype
+    4 calm
+    1 unproductive

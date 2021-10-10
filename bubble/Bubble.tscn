@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://bubble/circle-outline.png" type="Texture" id=1]
+[ext_resource path="res://fonts/LibreBaskerville_Italics.tres" type="DynamicFont" id=2]
+[ext_resource path="res://bubble/Bubble.gd" type="Script" id=3]
+
+[node name="Bubble" type="StaticBody2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 2, 0 )
+polygon = PoolVector2Array( -1.00604, -76.5165, -24.0165, -72.5879, -47.3076, -59.399, -63.8639, -41.4396, -73.1242, -22.9189, -75.6499, 0.0914841, -72.8436, 21.1377, -63.3027, 41.0614, -43.9402, 61.8269, -21.2104, 72.4903, -0.445038, 75.5771, -0.00442505, 84.0362, -91.7747, 82.0339, -91.1072, -80.8166, -1.67297, -82.8188 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2( -2.60495, -0.434039 )
+rotation = 3.14159
+polygon = PoolVector2Array( -1.00604, -76.5165, -24.0165, -72.5879, -47.3076, -59.399, -63.8639, -41.4396, -73.1242, -22.9189, -75.6499, 0.0914841, -72.8436, 21.1377, -63.3027, 41.0614, -43.9402, 61.8269, -21.2104, 72.4903, -0.445038, 75.5771, 1.07233, 82.0511, -91.699, 80.716, -92.366, -84.8041, -0.262085, -84.1365 )
+
+[node name="Control" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+margin_left = -90.3535
+margin_top = 91.5858
+margin_right = 87.6465
+margin_bottom = 109.586
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/CenterContainer"]
+margin_left = 65.0
+margin_right = 113.0
+margin_bottom = 28.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Mon"
+align = 1
+valign = 1

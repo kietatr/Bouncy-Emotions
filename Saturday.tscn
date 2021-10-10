@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://bubble/Bubble.tscn" type="PackedScene" id=2]
+[ext_resource path="res://particle/Particle.tscn" type="PackedScene" id=3]
+
+[node name="World" type="Node2D"]
+
+[node name="Bubbles" type="Node2D" parent="."]
+position = Vector2( 0, 13 )
+
+[node name="Bubble_Sat" parent="Bubbles" instance=ExtResource( 2 )]
+position = Vector2( 512, 371 )
+day = "Sat"
+
+[node name="Particle3" parent="Bubbles/Bubble_Sat" instance=ExtResource( 3 )]
+hours = 6.0
+
+[node name="Particle2" parent="Bubbles/Bubble_Sat" instance=ExtResource( 3 )]
+type = "angry"
+
+[node name="Particle4" parent="Bubbles/Bubble_Sat" instance=ExtResource( 3 )]
+type = "fresh"
+
+[node name="Particle5" parent="Bubbles/Bubble_Sat" instance=ExtResource( 3 )]
+hours = 3.0
+type = "focused"

@@ -2,6 +2,6 @@
 
 Visualizing emotions in a week of March 2021 (using Godot game engine)
 
-![Emotions screenshot](README-stuff\emotions.png)
+[![Bouncy Emotions video]({README-stuff/emotions.png})]({README-stuff/emotions.mp4} "Bouncy Emotions video")
 
-[![Emotions video]({README-stuff\emotions.png})]({README-stuff\emotions.mp4} "Emotions video")
+![Bouncy Emotions screenshot](README-stuff/emotions.png)
